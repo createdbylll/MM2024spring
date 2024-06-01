@@ -492,6 +492,81 @@
 		\label{fig20}
 	\end{figure}
 
+	\subsection{重力项影响系数}
+	在默认情况下，我们考虑重力项影响系数为$g=0$，即不考虑重力对烟尘扩散的影响.我们设置了$g=-1.0,-0.5,0.0,0.5,1.0$共5组数据(系数为负时可看作一股往上吹的风)，并在$t=30,60,90$时刻采样，绘图展示此时地面浓度分布情况.
+	\par
+	与直觉相符, 当重力项系数为正时, 重力会使烟尘向下沉降, 从而使地面浓度增加, 并且会更快达到稳定态.而当重力项系数为负时, 烟尘沉降速度减缓, 地面浓度减少而扩散所带来的影响会更加显著, 并且可以预知的是需要更多时间地表浓度才能稳定.
+	\par
+	结合实际情况, 工厂在进行烟尘排放时有两种选择. 如果工厂所在地人烟稀少或者周围无人居住, 考虑到工人的健康以及减少二次污染的风险, 可以考虑通过气流来使烟尘尽量扩散. 而如果工厂所在地距离居住地较近, 则应该灵活利用湿法除尘的思路, 使颗粒物凝结成较大颗粒，以应对不同风向的影响, 便于沉降和收集.
+	\begin{figure}[htbp]
+		\begin{minipage}{0.33\textwidth}
+			\includegraphics[width=\textwidth]{pics/g=-1,t=30.png}
+		\end{minipage}
+		\begin{minipage}{0.33\textwidth}
+			\includegraphics[width=\textwidth]{pics/g=-1,t=60.png}
+		\end{minipage}
+		\begin{minipage}{0.33\textwidth}
+			\includegraphics[width=\textwidth]{pics/g=-1,t=90.png}
+		\end{minipage}
+		\caption{g=-1}
+		\label{fig21}
+	\end{figure}
+
+	\begin{figure}[htbp]
+		\begin{minipage}{0.33\textwidth}
+			\includegraphics[width=\textwidth]{pics/g=-0.5,t=30.png}
+		\end{minipage}
+		\begin{minipage}{0.33\textwidth}
+			\includegraphics[width=\textwidth]{pics/g=-0.5,t=60.png}
+		\end{minipage}
+		\begin{minipage}{0.33\textwidth}
+			\includegraphics[width=\textwidth]{pics/g=-0.5,t=90.png}
+		\end{minipage}
+		\caption{g=-0.5}
+		\label{fig22}
+	\end{figure}
+
+	\begin{figure}[htbp]
+		\begin{minipage}{0.33\textwidth}
+			\includegraphics[width=\textwidth]{pics/g=0,t=30.png}
+		\end{minipage}
+		\begin{minipage}{0.33\textwidth}
+			\includegraphics[width=\textwidth]{pics/g=0,t=60.png}
+		\end{minipage}
+		\begin{minipage}{0.33\textwidth}
+			\includegraphics[width=\textwidth]{pics/g=0,t=90.png}
+		\end{minipage}
+		\caption{g=0}
+		\label{fig23}
+	\end{figure}
+	
+	\begin{figure}[htbp]
+		\begin{minipage}{0.33\textwidth}
+			\includegraphics[width=\textwidth]{pics/g=0.5,t=30.png}
+		\end{minipage}
+		\begin{minipage}{0.33\textwidth}
+			\includegraphics[width=\textwidth]{pics/g=0.5,t=60.png}
+		\end{minipage}
+		\begin{minipage}{0.33\textwidth}
+			\includegraphics[width=\textwidth]{pics/g=0.5,t=90.png}
+		\end{minipage}
+		\caption{g=0.5}
+		\label{fig24}
+	\end{figure}
+
+	\begin{figure}[htbp]
+		\begin{minipage}{0.33\textwidth}
+			\includegraphics[width=\textwidth]{pics/g=1,t=30.png}
+		\end{minipage}
+		\begin{minipage}{0.33\textwidth}
+			\includegraphics[width=\textwidth]{pics/g=1,t=60.png}
+		\end{minipage}
+		\begin{minipage}{0.33\textwidth}
+			\includegraphics[width=\textwidth]{pics/g=1,t=90.png}
+		\end{minipage}
+		\caption{g=1}
+		\label{fig25}
+	\end{figure}
 	\section{不足与改进}
 	\noindent 由于我们模拟烟尘扩散使用有限差分法，并且使用了较多假设，我们可以从中发现如下的不足：
 	\begin{itemize}
